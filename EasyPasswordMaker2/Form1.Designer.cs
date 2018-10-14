@@ -55,6 +55,7 @@
             this.nq = new System.Windows.Forms.Button();
             this.lq = new System.Windows.Forms.Button();
             this.cq = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.passLength)).BeginInit();
             this.SuspendLayout();
             // 
@@ -224,11 +225,20 @@
             this.cq.Name = "cq";
             this.cq.UseVisualStyleBackColor = true;
             // 
+            // textBox1
+            // 
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            resources.ApplyResources(this.textBox1, "textBox1");
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.cq);
             this.Controls.Add(this.lq);
             this.Controls.Add(this.nq);
@@ -285,6 +295,7 @@
         private System.Windows.Forms.Button nq;
         private System.Windows.Forms.Button lq;
         private System.Windows.Forms.Button cq;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 
